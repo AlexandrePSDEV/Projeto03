@@ -1,0 +1,644 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html,body{
+    height: 100%;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.clear{
+    clear: both;
+}
+header{
+    width: 100%;
+    height: 90vh;
+    padding: 40px 2%;
+    min-height: 900px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../imagens/capa.png');
+    font-weight: 300;
+}
+header .logo{
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 80px;
+    background-image: url('../imagens/logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+header nav{
+    float: right;
+}
+header nav.desktop-menu{
+    display: block;
+}
+header nav.mobile-menu{
+    display: none;
+}
+header nav.desktop-menu ul{
+    list-style-type: none;
+}
+header nav.desktop-menu li{
+    float: left;
+    padding: 0 20px;
+}
+header nav.desktop-menu li a{
+    color: white;
+    text-decoration: none;
+}
+header nav.mobile-menu{
+    cursor: pointer;
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url('../imagens/menu1.png');
+    background-size: 100% 100%;
+}
+header nav.mobile-menu:hover ul{
+    opacity: 2;
+}
+header nav.mobile-menu ul{
+    opacity: 0;
+    transition: 1s;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 80px;
+    list-style-type:none;
+    text-align: center;
+}
+header nav.mobile-menu ul li{
+    border-bottom: 1px solid black;
+    padding: 8px 0;
+    transition: 0.5s;
+}
+header nav.mobile-menu ul li:hover{
+    background-color: rgb( 230,230,230);
+}
+
+header nav.mobile-menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+.chamada1{
+    max-width: 600px;
+    float: right;
+    margin: 200px 380px;
+
+}
+.chamada1 h2{
+    font-weight: 300;
+    font-size: 30px;
+    color: white;
+}
+.chamada1 p{
+    font-size: 15px;
+    color: white;
+    margin-top: 15px;
+}
+section.sessão1{
+    width: 100%;
+    padding: 0  2%;
+    background: linear-gradient(to bottom, #472562 30%, #cc99ff 100%);
+    padding: 0.2%;
+    height: 400px;
+}
+section.sessão1 .container{
+    max-width: 1000px;
+    height: calc(100% + 20px);
+}
+.texto-sessão1{
+    float: left;
+    width: 50%;
+    left: 55px;
+    margin-top: 60px;
+    padding-left: 80px;
+    color: white;
+    position: relative;
+}
+.texto-sessão1  h2{
+    font-size: 26px;
+    font-weight: 300;
+}
+.texto-sessão1 p{
+    margin-top: 20px;
+    font-size: 16px;
+}
+.texto-sessão1 ul{
+    font-size: 15px;
+    list-style-position: outside;
+    padding-left: 15px;
+}
+.texto-sessão1 ul li{
+    width: 100%;
+    margin-top: 8px;
+}
+.btn1-texto{
+    background: linear-gradient(to bottom, #ff703d 0%, #ffcc00 100%);
+    width: 165px;
+    height: 44px;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 44px;
+    border-radius: 30px;
+}
+.device-sessão1{
+    width: 50%;
+    margin-top: -50px;
+    float: left;
+    height: 105%;
+    background-image: url('../imagens/device.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.sessão2{
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+.sessão2 .container{
+   max-width: 1000px; 
+}
+.sessão2 h2{
+    font-weight: 300;
+    color: #472663;
+}
+.sessão2 p{
+    margin-top: 30px;
+    max-width: 900px;
+    display: inline-block;
+}
+.sessão2 img{
+    position: relative;
+    top: 30px;
+    width: 90%;
+}
+.sessão3{
+    width: 100%;
+}
+.parte1{
+    color: white;
+    float: left;
+    width: 50%;
+    padding: 140px 0 90px 0;
+    background-color: #835FA7;
+}
+.wraper-parte1{
+    max-width: 600px;
+    float: right;
+    padding: 0 70px;
+}
+.parte1 h2{
+    font-weight: 300;
+    font-style: italic;
+    font-size: 23px;
+}
+.parte1 p{
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 45px;
+    line-height: 35px;
+}
+.parte2{
+    float: left;
+    width: 50%;
+    padding: 140px 0 90px 0;
+    background: #e7e6e6;
+}
+.sobre-autor{
+    float: left;
+    max-width: 600px;
+    padding-left: 30px;
+}
+.título-autor{
+    float: left;
+    width: 100%;
+}
+.wraper-título-autor{
+    float: left;
+}
+.título-autor h2{
+    color: #232323;
+    font-weight: 400;
+    font-size: 20px;
+    padding-right: 20px;
+}
+.título-autor p{
+    font-size: 14px;
+    color: #232323;
+    font-style: italic;
+    font-weight: 300;
+}
+.título-autor .img-autor{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-image: url('../imagens/alex2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.texto-autor{
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.texto-autor p{
+    color: #232323;
+    font-size: 15px;
+}
+.slider-bullets{
+    width: 100%;
+    float: left;
+    padding-left: 30px;
+    margin-top: 15px;
+}
+.slider-bullets span{
+    margin-top: 30px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    float: left;
+    margin-right: 8px;
+    background-color: rgb( 200,200,200);
+}
+section.sessão4{
+    background: linear-gradient(to bottom, #472562 45%, #cc99ff 100%);
+    padding: 90px 0;
+}
+.form{
+    float: left;
+    width: 50%;
+    color: white;
+    padding-left: 40px;
+}
+.form h2{
+    color: white;
+    font-size: 23px;
+    font-weight: 300;
+}
+.form p{
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    max-width: 400px;
+    padding-right: 10px;
+}
+.form form{
+    margin-top: 15px;
+}
+.form form input[type="text"]{
+    width: 90%;
+    max-width: 480px;
+    margin-top: 10px;
+    height: 60px;
+    padding-left: 10px;
+    line-height: 58px;
+    border: 1px solid rgb( 200,200,200);
+}
+.form form textarea{
+    width: 90%;
+    margin-top: 10px;
+    max-width: 480px;
+    height: 160px;
+    padding: 15px;
+    border: 1px solid rgb( 200,200,200);
+}
+.form form input[type="submit"]{
+    background: linear-gradient(to bottom, #ff703d 10%, #ffcc00 90%);
+    width: 165px;
+    height: 44px;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 30px;
+    border: 0;
+    border-radius: 30px;
+}
+.map-wraper{
+	float: left;
+	width: 50%;
+	padding:0 10px;
+	color: white;
+}
+
+.map-wraper h2{
+    font-size: 24px;
+    font-weight: 300;
+    color: white;
+}
+.map-wraper p{
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: white;
+}
+.map-wraper3{
+	margin-top:10px;
+	width: 100%;
+	max-width: 480px;
+	position: relative;
+}
+
+.map-wraper2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 90%;
+}
+.map{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 90%;
+    background-color:white;
+    border: 5px solid rgb(200, 200, 200);
+}
+footer{
+    padding: 40px 0;
+    background: #192123;
+    color: white;
+}
+footer p:nth-of-type(1){
+    float: left;
+    font-size: 14px;
+}
+footer p:nth-of-type(2){
+    float: right;
+    font-size: 14px;
+}
+
+  
+@media  screen and (max-width: 830px){
+header{
+    height: 90%;
+}
+header nav.desktop-menu{
+    display: block;
+}
+header nav.mobile-menu{
+    display: none;
+}
+.device-sessão1{
+    margin-top: -50px;
+}
+
+.chamada1{
+    max-width: none;
+    width: 100%;
+    text-align: center;
+    float: none;
+    margin: 170px 0;
+}
+.chamada1 h2{
+    font-weight: 300;
+    font-size: 30px;
+    padding: 0;
+    color: white;
+}
+.chamada1 p{
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+}
+.sessão2{
+    padding: 20px;
+}
+.parte1{
+    margin-top: 20px;
+}
+.parte2{
+    margin-top: 15px;
+}
+.wraper-parte1{
+    max-width: 600px;
+    float: right;
+    padding: 0 110px;
+}
+.sessão3 .parte2{
+    padding: 105px;
+
+}
+.sessão4 .form{
+   width: 60%;
+   margin-left: 100px;
+}
+.sessão4 .form h2, p{
+    margin: 20px 0;
+}
+.map-wraper{
+    width: 80%;
+    margin-top: 40px;
+    margin-left: 140px;
+}
+.map-wraper h2{
+    text-align: left;
+    margin-bottom: 30px;
+}
+.map-wraper p{
+    text-align: center;
+    margin-left: -495px;
+    margin-bottom: 20px;
+}
+.map{
+    margin-top: 20px;
+    width: 48%;
+    float: right;
+    height: 480px;
+}
+footer p:nth-of-type(1){
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+footer p:nth-of-type(2){
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+}
+
+
+@media screen and (max-width: 768px){
+
+header{
+    width: 100%;
+    height: auto;
+    min-height: 90vh;
+    padding: 40px 3%;
+} 
+header nav.desktop-menu{
+    display: none;
+} 
+header nav.mobile-menu{
+    display: block;
+}   
+section.sessão1{
+    padding:40px 2%;
+    height: auto;
+    text-align: center;
+}
+.sessão1 .container{
+    height: auto;
+}
+.texto-sessão1{
+    width: 100%;
+    margin-top: 0;
+    padding-left: 0;
+    color: white;
+    position: static;
+    float: none;
+    display: inline-block;
+}
+.texto-sessão1 ul{
+    display: inline-block;
+    margin-top: 20px;
+}
+.texto-sessão1 ul li{
+    float: none;
+    text-align: left;
+}
+.btn1-texto{
+    display: inline-block;
+}
+.device-sessão1{
+    display: none;
+}
+.sessão2{
+ margin-bottom: -40px;
+}
+.título-autor .img-autor{
+    display: none;
+}
+.sessão3{
+    margin-top: 30px;
+}
+.parte1{
+    margin-top: 0;
+}
+.parte2{
+    margin-top: -5px;
+    float: left;
+    width: 50%;
+    background: #e7e6e6;
+}
+.parte2 .wraper-título-autor{
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+.parte2 .slider-bullets{
+    padding: 5px 0;
+    margin-left: 20px;
+}
+section.sessão4 .container{
+    text-align: center;
+}
+.form{
+    width: 100%;
+    float: none;
+}
+.form h2{
+    margin-bottom:20px;
+    margin-right: 20px;
+}
+.form p{
+    display: inline-block;
+    float: none;
+    margin-bottom: 20px;
+}
+.map-wraper{
+    padding: 0;
+    float: none;
+    width: 85%;
+    height: auto;
+    padding-top: 460px;
+    float: right;
+}
+.map-wraper h2{
+    margin-top: -460px;
+    margin-left: 160px;
+    margin-right: 270px;
+    font-size: 20px;
+}
+.map-wraper p{
+    margin-top: 15px;
+}
+
+.map-wraper3{
+    margin-top: 10px;
+    width: 100%;
+    max-width: none;
+    position: relative;
+}
+.map-wraper2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 0;
+}
+}
+
+
+@media screen and (max-width: 580px){
+.parte1{
+    width: 100%;
+    padding: 140px 0;
+}
+.parte2{
+    width: 100%;
+    padding: 40px 0;
+}
+.sessão2{
+    padding: 0;
+}
+.sessão2 img{
+    top: 26px;
+    width: 90%;
+    margin-top: 40px;
+}
+.form{
+    padding: 10px;
+}
+.map-wraper{
+    padding: 30px;
+}
+.map-wraper h2{
+    float: left;
+    margin-top: 10px;
+    margin-left: 80px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.map-wraper p{
+    float: rigth;
+    margin-left: -30px;
+}
+footer{
+    text-align: center;
+}
+footer p:nth-of-type(1){
+    margin-right: 40px;
+    float: none;
+    font-size: 14px;
+}
+footer p:nth-of-type(2){
+    float: none;
+    margin-top: 8px;
+}
+}
